@@ -25,8 +25,8 @@ public class BlankStepDefs{
     @Then("^I validate title and URL$")
     public void i_print_title_and_URL() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        assertEquals("Selenium Framework | Selenium, Cucumber, Ruby, Java et al.",driver.getTitle());
-        assertEquals("http://www.seleniumframework.com/",driver.getCurrentUrl());
+      assertEquals("Selenium Framework | Selenium, Cucumber, Ruby, Java et al.",driver.getTitle());
+      assertEquals("http://www.seleniumframework.com/",driver.getCurrentUrl());
     }
-
+    
 }

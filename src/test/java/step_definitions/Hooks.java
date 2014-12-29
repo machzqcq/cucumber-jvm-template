@@ -12,7 +12,6 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
-
 public class Hooks{
     public static WebDriver driver;
 
@@ -26,10 +25,10 @@ public class Hooks{
     	System.out.println("Called openBrowser");
     	driver = new ChromeDriver();
     	driver.manage().deleteAllCookies();
+    	driver.manage().window().maximize();
     }
 
- 
-    
+     
     @After
     /**
      * Embed a screenshot in test report if test is marked as failed
