@@ -6,6 +6,7 @@ package junit;
 
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.*;
@@ -23,7 +24,6 @@ public class GuruTest {
 
     @Before
     public void setUp() throws Exception {
-        System.out.println("Called openBrowser");
         System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
         driver = new ChromeDriver();
         baseUrl = "http://www.guru99.com/";
@@ -33,7 +33,13 @@ public class GuruTest {
     @Test
     public void testUntitled() throws Exception {
         driver.get(baseUrl + "/");
-        driver.findElement(By.linkText("Learn Selenium")).click();
+        driver.findElement(By.xpath("id('java_technologies')/li[3]/a")).click();
+        //Validation
+        Assert.assertEquals("Cannot find the page Free Selenium Tutorials",
+                driver.getTitle(),"Free Selenium Tutorials");
+        Assert.assertEquals("Cannot find the content Introduction to Selenium",
+                driver.findElement(By.xpath("//*[@href='/introduction-to-selenium.html']")).getText(),
+                "Introduction to Selenium");
     }
 
     @After
