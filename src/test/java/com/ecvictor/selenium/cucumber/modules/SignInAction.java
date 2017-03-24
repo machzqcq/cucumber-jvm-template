@@ -1,14 +1,14 @@
-package modules;
+package com.ecvictor.selenium.cucumber.modules;
 
-import helpers.Log;
+import com.ecvictor.selenium.cucumber.helpers.Log;
 
 import java.util.HashMap;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 
-import pageobjects.AutomationHomePage;
-import pageobjects.LoginPage;
+import com.ecvictor.selenium.cucumber.pageobjects.AutomationHomePage;
+import com.ecvictor.selenium.cucumber.pageobjects.LoginPage;
 
 
 public class SignInAction {

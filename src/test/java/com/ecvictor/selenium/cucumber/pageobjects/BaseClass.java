@@ -1,4 +1,4 @@
-package pageobjects;
+package com.ecvictor.selenium.cucumber.pageobjects;
 
 import org.openqa.selenium.WebDriver;
 

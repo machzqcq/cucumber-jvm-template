@@ -1,4 +1,4 @@
-package helpers;
+package com.ecvictor.selenium.cucumber.helpers;
 import org.apache.log4j.Logger;
 
 public class Log {

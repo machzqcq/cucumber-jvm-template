@@ -1,4 +1,4 @@
-package step_definitions;
+package com.ecvictor.selenium.cucumber.step_definitions;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;

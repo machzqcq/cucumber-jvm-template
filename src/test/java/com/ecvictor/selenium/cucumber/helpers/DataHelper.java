@@ -1,6 +1,5 @@
-package helpers;
+package com.ecvictor.selenium.cucumber.helpers;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.util.HashMap;
 import java.util.List;

@@ -1,4 +1,4 @@
-package step_definitions;
+package com.ecvictor.selenium.cucumber.step_definitions;
 
 import org.junit.runner.RunWith;
 

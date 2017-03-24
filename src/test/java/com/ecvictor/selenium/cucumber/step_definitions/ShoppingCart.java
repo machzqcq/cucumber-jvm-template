@@ -1,19 +1,17 @@
-package step_definitions;
-
-import helpers.DataHelper;
+package com.ecvictor.selenium.cucumber.step_definitions;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import modules.SignInAction;
-import modules.SignoutAction;
+import com.ecvictor.selenium.cucumber.modules.SignInAction;
+import com.ecvictor.selenium.cucumber.modules.SignoutAction;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import pageobjects.AutomationHomePage;
-import pageobjects.LoginPage;
+import com.ecvictor.selenium.cucumber.pageobjects.AutomationHomePage;
+import com.ecvictor.selenium.cucumber.pageobjects.LoginPage;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 

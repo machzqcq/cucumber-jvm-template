@@ -2,11 +2,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>cucumber</groupId>
-	<artifactId>cucumber-java-template</artifactId>
+	<groupId>automation</groupId>
+	<artifactId>automation-testing</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
-	<name>Cucumber-JVM template</name>
+	<name>automation-testing</name>
 
 	<dependencies>
 		<dependency>

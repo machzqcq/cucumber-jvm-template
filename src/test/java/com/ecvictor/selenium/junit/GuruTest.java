@@ -1,20 +1,22 @@
-package junit; /**
- * Created by caoc on 2/10/17.
- * Copyright (c) 2015 Service ECVictor Inc. All rights reserved.
+package com.ecvictor.selenium.junit;
+
+/**
+ * Created by caoc on 3/18/2017.
  */
 
+
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.fail;
 
-public class JunitTest {
+public class GuruTest {
     private WebDriver driver;
     private String baseUrl;
     private boolean acceptNextAlert = true;
@@ -22,26 +24,22 @@ public class JunitTest {
 
     @Before
     public void setUp() throws Exception {
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe"); ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--kiosk");
-        driver = new ChromeDriver(chromeOptions);
-        baseUrl = "https://www.just-eat.ca/";
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
+        driver = new ChromeDriver();
+        baseUrl = "http://www.guru99.com/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
     @Test
-    public void testSearchH3A() throws Exception {
-        driver.get(baseUrl);
-        driver.findElement(By.id("area")).clear();
-        driver.findElement(By.id("area")).sendKeys("h3a");
-        driver.findElement(By.id("searchForm-submit")).click();
-    }
-
-    @Test
-    public void testCareer() throws Exception {
-        driver.get(baseUrl);
-        driver.findElement(By.linkText("Career Opportunities")).click();
-
+    public void testUntitled() throws Exception {
+        driver.get(baseUrl + "/");
+        driver.findElement(By.xpath("id('java_technologies')/li[3]/a")).click();
+        //Validation
+        Assert.assertEquals("Cannot find the page Free Selenium Tutorials",
+                driver.getTitle(),"Free Selenium Tutorials");
+        Assert.assertEquals("Cannot find the content Introduction to Selenium",
+                driver.findElement(By.xpath("//*[@href='/introduction-to-selenium.html']")).getText(),
+                "Introduction to Selenium");
     }
 
     @After

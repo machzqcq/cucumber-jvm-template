@@ -1,11 +1,11 @@
-package modules;
+package com.ecvictor.selenium.cucumber.modules;
 
-import helpers.Log;
+import com.ecvictor.selenium.cucumber.helpers.Log;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 
-import pageobjects.AutomationHomePage;
+import com.ecvictor.selenium.cucumber.pageobjects.AutomationHomePage;
 
 
 
