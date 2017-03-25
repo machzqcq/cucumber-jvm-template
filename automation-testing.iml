@@ -44,6 +44,7 @@
     <orderEntry type="library" name="Maven: javax.mail:mailapi:1.4.3" level="project" />
     <orderEntry type="library" name="Maven: javax.activation:activation:1.1" level="project" />
     <orderEntry type="library" name="Maven: net.sf.jopt-simple:jopt-simple:4.6" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit:4.11" level="project" />
     <orderEntry type="library" name="Maven: info.cukes:cucumber-java:1.2.0" level="project" />
     <orderEntry type="library" name="Maven: info.cukes:cucumber-core:1.2.0" level="project" />
     <orderEntry type="library" name="Maven: info.cukes:cucumber-html:0.2.3" level="project" />
@@ -85,7 +86,6 @@
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-io:9.2.20.v20161216" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-common:9.2.20.v20161216" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-api:9.2.20.v20161216" level="project" />
-    <orderEntry type="library" name="Maven: junit:junit:4.11" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
     <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml:3.9" level="project" />
     <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml-schemas:3.9" level="project" />

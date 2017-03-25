@@ -35,7 +35,7 @@ public class ProductTest {
     @Test
     public void testGetMyIp() {
         expect().statusCode(200);
-        expect().body("ip", equalTo("76.65.249.106"))
+        expect().body("ip", equalTo("76.65.24.106"))
                 .contentType("application/json; charset=ISO-8859-1")
                 .given()
                 .when().get("http://ip.jsontest.com");
@@ -49,6 +49,7 @@ public class ProductTest {
     public void testLoginCredential() {
         expect().statusCode(200);
         expect().body("username", equalTo(prop.getProperty("username")))
+                .body("password", equalTo(prop.getProperty("password")))
                 .contentType("application/json; charset=ISO-8859-1")
                 .given()
                 .when().get("http://echo.jsontest.com/username/ccao/password/123456");
