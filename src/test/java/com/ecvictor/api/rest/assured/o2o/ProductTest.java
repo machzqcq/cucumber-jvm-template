@@ -35,7 +35,7 @@ public class ProductTest {
     @Test
     public void testGetMyIp() {
         expect().statusCode(200);
-        expect().body("ip", equalTo("76.65.24.106"))
+        expect().body("ip", equalTo("76.65.249.106"))
                 .contentType("application/json; charset=ISO-8859-1")
                 .given()
                 .when().get("http://ip.jsontest.com");
