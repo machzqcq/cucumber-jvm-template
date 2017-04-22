@@ -16,7 +16,7 @@ public class CalculatorTest {
     public void divide() throws Exception {
         Assert.assertTrue(Calculator.divide(1,2)==0);
         Assert.assertEquals("1/2 should be 0",
-                1,Calculator.divide(1,2) );
+                0,Calculator.divide(1,2) );
 
     }
 
