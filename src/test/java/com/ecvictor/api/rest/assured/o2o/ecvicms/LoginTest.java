@@ -1,4 +1,4 @@
-package com.ecvictor.api.rest.assured.o2o.ECVCRM;
+package com.ecvictor.api.rest.assured.o2o.ecvicms;
 
 /**
  * Created by caoc on 3/24/2017.
