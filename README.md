@@ -1,10 +1,30 @@
 Automation Testing Workshop
 =====================
 
-This is a template project that you can use to start with cucumber-jvm and selenium java tests. Read about it on [seleniumframework.com] (http://www.seleniumframework.com/selenium-java)
+This is a template project that includes five testing framework
+* Testng
+* Cucumber
+* Junit
 
 # Setup environment
 ## JDK
-JDK1.8 
+The major java version used in the project is java1.8
 
+* Download Page
+
+http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html
+
+* For Windows User
 http://www.seleniumframework.com/cucumber-jvm-3/install-java-jdk/
+
+## Maven
+The project is managed by maven
+* Downloading page
+https://maven.apache.org/download.cgi?Preferred=ftp%3A%2F%2Fmirror.reverse.net%2Fpub%2Fapache%2F
+* Installation
+https://maven.apache.org/install.html
+* For Windows user
+http://www.seleniumframework.com/cucumber-jvm-3/install-maven/
+
+## Cucumber Framework
+http://www.seleniumframework.com/cucumber-jvm-3/cucumber-jvm-and-selenium/
