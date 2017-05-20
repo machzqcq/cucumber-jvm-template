@@ -25,6 +25,11 @@ https://maven.apache.org/download.cgi?Preferred=ftp%3A%2F%2Fmirror.reverse.net%2
 https://maven.apache.org/install.html
 * For Windows user
 http://www.seleniumframework.com/cucumber-jvm-3/install-maven/
+* For mac 
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install maven
+## Git
+https://git-scm.com/download
 
 ## Cucumber Framework
 http://www.seleniumframework.com/cucumber-jvm-3/cucumber-jvm-and-selenium/
