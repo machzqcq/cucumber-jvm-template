@@ -11,12 +11,16 @@
 		<scribejava-apis.version>2.5.3</scribejava-apis.version>
         <maven-surefire-plugin.version>2.20</maven-surefire-plugin.version>
         <junit.version>4.10</junit.version>
-    </properties>
+		<xml-apis.version>2.0.2</xml-apis.version>
+		<poi.version>3.11-beta3</poi.version>
+		<selenium-java.version>3.4.0</selenium-java.version>
+		<cucumber-testng.version>1.2.5</cucumber-testng.version>
+	</properties>
 	<packaging>jar</packaging>
 	<name>automation-testing</name>
 
 	<dependencies>
-
+		<!--testng-->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
@@ -85,22 +89,22 @@
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>1.2.0</version>
+			<version>${cucumber-testng.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-testng</artifactId>
-			<version>1.2.0</version>
+			<version>${cucumber-testng.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>1.2.0</version>
+			<version>${cucumber-testng.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.3.1</version>
+			<version>${selenium-java.version}</version>
 		</dependency>
 
 		<dependency>
@@ -121,12 +125,12 @@
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
-			<version>3.11-beta3</version>
+			<version>${poi.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>xml-apis</groupId>
 			<artifactId>xml-apis</artifactId>
-			<version>2.0.2</version>
+			<version>${xml-apis.version}</version>
 		</dependency>
 
 		<dependency>
@@ -178,7 +182,7 @@
                     </configuration>
 
 					<dependencies>
-                        <!--Disbale the junit if needed-->
+                        <!--Disable the junit if needed-->
 						<!--<dependency>-->
 							<!--<groupId>org.apache.maven.surefire</groupId>-->
 							<!--<artifactId>surefire-junit47</artifactId>-->

@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class BlankStepDefs{
@@ -13,7 +14,7 @@ public class BlankStepDefs{
     
     public BlankStepDefs()
     {
-    	driver = Hooks.driver;
+    	driver = new ChromeDriver();;
     }
     
     @When("^I open seleniumframework website$")

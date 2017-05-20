@@ -22,10 +22,16 @@ public class Hooks {
      */
     public void openBrowser() throws MalformedURLException {
         System.out.println("Called openBrowser");
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
+        //chose driver type
+        String os = (System.getProperty("os.name"));
+
+        if (os.equalsIgnoreCase("Mac OS X"))
+            System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
+        else System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.ext");
+
         driver = new ChromeDriver();
         driver.manage().deleteAllCookies();
-        driver.manage().window().maximize();
+//        driver.manage().window().maximize();
     }
 
 
@@ -46,7 +52,9 @@ public class Hooks {
             }
 
         }
+        driver.close();
         driver.quit();
+
 
     }
 

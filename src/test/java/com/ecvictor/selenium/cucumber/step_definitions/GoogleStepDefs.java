@@ -3,6 +3,7 @@ package com.ecvictor.selenium.cucumber.step_definitions;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import static org.testng.AssertJUnit.assertEquals;
 
@@ -12,7 +13,7 @@ public class GoogleStepDefs {
 
     public GoogleStepDefs()
     {
-    	driver = Hooks.driver;
+    	driver = new ChromeDriver();;
     }
     
     @When("^I open google website$")

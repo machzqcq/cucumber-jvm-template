@@ -24,7 +24,12 @@ public class GuruTest {
 
     @Before
     public void setUp() throws Exception {
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
+        //chose driver type
+        String os = (System.getProperty("os.name"));
+
+        if (os.equalsIgnoreCase("Mac OS X"))
+            System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
+        else System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.ext");
         driver = new ChromeDriver();
         baseUrl = "http://www.guru99.com/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
