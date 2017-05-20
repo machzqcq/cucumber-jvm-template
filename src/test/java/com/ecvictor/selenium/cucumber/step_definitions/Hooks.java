@@ -27,7 +27,7 @@ public class Hooks {
 
         if (os.equalsIgnoreCase("Mac OS X"))
             System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
-        else System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.ext");
+        else System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
 
         driver = new ChromeDriver();
         driver.manage().deleteAllCookies();
