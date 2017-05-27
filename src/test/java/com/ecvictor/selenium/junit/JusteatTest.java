@@ -12,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.concurrent.TimeUnit;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 public class JusteatTest {
@@ -38,9 +39,12 @@ public class JusteatTest {
     @Test
     public void testSearchH3A() throws Exception {
         driver.get(baseUrl);
-        driver.findElement(By.id("area")).clear();
-        driver.findElement(By.id("area")).sendKeys("h3a");
-        driver.findElement(By.id("searchForm-submit")).click();
+        driver.findElement(By.id("homepage-search-fullAddress")).clear();
+        driver.findElement(By.id("homepage-search-fullAddress")).sendKeys("");
+        driver.findElement(By.id("homepage-search-fullAddress")).clear();
+        driver.findElement(By.id("homepage-search-fullAddress")).sendKeys("Service ECVictor Inc., Sherbrooke Street West, Montreal, QC, Canada");
+        driver.findElement(By.xpath("/html/body/section/div[2]/div/div/div[1]/ul/li[1]")).click();
+        assertEquals("Zanga Sushi", driver.findElement(By.cssSelector("h3.listing-item-title")).getText());
     }
 
     @Test
@@ -52,7 +56,9 @@ public class JusteatTest {
 
     @After
     public void tearDown() throws Exception {
+        driver.close();
         driver.quit();
+
         String verificationErrorString = verificationErrors.toString();
         if (!"".equals(verificationErrorString)) {
             fail(verificationErrorString);

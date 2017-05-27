@@ -10,7 +10,7 @@
 		<rest-assured.version>3.0.2</rest-assured.version>
 		<scribejava-apis.version>2.5.3</scribejava-apis.version>
         <maven-surefire-plugin.version>2.20</maven-surefire-plugin.version>
-        <junit.version>4.10</junit.version>
+        <junit.version>4.12</junit.version>
 		<xml-apis.version>2.0.2</xml-apis.version>
 		<poi.version>3.11-beta3</poi.version>
 		<selenium-java.version>3.4.0</selenium-java.version>
@@ -162,6 +162,16 @@
 		<pluginManagement>
 
 			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.6.1</version>
+					<configuration>
+						<!-- or whatever version you use -->
+						<source>1.8</source>
+						<target>1.8</target>
+					</configuration>
+				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
