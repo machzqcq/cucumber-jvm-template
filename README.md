@@ -6,7 +6,6 @@ This is a template project that includes five testing framework
 * Cucumber
 * Junit
 * Selenium
-* 
 
 
 # Setup Environment
