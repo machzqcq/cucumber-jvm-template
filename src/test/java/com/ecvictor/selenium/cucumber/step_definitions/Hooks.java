@@ -8,11 +8,12 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.net.MalformedURLException;
 
 public class Hooks {
-    public static WebDriver driver;
+    public static WebDriver driver = null;
 
 
     @Before
@@ -29,9 +30,12 @@ public class Hooks {
             System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
         else System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
 
-        driver = new ChromeDriver();
+
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--kiosk");
+
+        driver = new ChromeDriver(chromeOptions);
         driver.manage().deleteAllCookies();
-//        driver.manage().window().maximize();
     }
 
 
@@ -54,8 +58,6 @@ public class Hooks {
         }
         driver.close();
         driver.quit();
-
-
     }
 
 }

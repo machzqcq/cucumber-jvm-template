@@ -10,8 +10,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "classpath:features",
 		plugin = {"pretty", "html:target/cucumber-html-report",
-				"json:target/cucumber.json"},
-		tags = {}
+				"json:target/cucumber.json"}
+//		tags = {"@sign_in"}
 		)
 public class RunCukesTest{
 	

@@ -9,13 +9,12 @@ import static org.testng.AssertJUnit.assertEquals;
 
 
 public class GoogleStepDefs {
-    public WebDriver driver;
+    public WebDriver driver = Hooks.driver;
 
-    public GoogleStepDefs()
-    {
-    	driver = new ChromeDriver();;
+    public GoogleStepDefs() {
+
     }
-    
+
     @When("^I open google website$")
     public void i_open_seleniumframework_website() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
@@ -25,8 +24,8 @@ public class GoogleStepDefs {
     @Then("^I validate google title and URL$")
     public void i_print_title_and_URL() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-      assertEquals("Selenium Framework | Selenium, Cucumber, Ruby, Java et al.",driver.getTitle());
-      assertEquals("http://www.seleniumframework.com/",driver.getCurrentUrl());
+        assertEquals("Selenium Framework | Selenium, Cucumber, Ruby, Java et al.", driver.getTitle());
+        assertEquals("http://www.seleniumframework.com/", driver.getCurrentUrl());
     }
-    
+
 }
