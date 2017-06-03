@@ -23,6 +23,10 @@ public class BlankStepDefs {
         driver.get("http://www.seleniumframework.com");
     }
 
+
+
+
+
     @Then("^I validate title and URL$")
     public void i_print_title_and_URL() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
