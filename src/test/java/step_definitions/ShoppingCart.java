@@ -14,8 +14,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import pageobjects.AutomationHomePage;
 import pageobjects.LoginPage;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 
 public class ShoppingCart{
